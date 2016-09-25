@@ -1,0 +1,393 @@
+
+#header{
+    width: 649px;
+    height: 121px;
+    position: relative;
+    z-index: 9999;
+    max-width: 100%;
+    line-height: 30px;
+    background: url("../img/header.png") 0px 0px no-repeat;
+    margin: 0px auto;
+    text-align : center;
+    padding-top : 30px;
+    font-family: Lobster;
+    strong{
+    font-size: 3rem;
+    display: block;
+    font-weight: bold;
+    }
+
+    span{
+        display:block;
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 6px;
+    }
+    #header{
+        width:105%;
+        line-height: 22px;
+        padding-top: 20px;
+        background: url(../img/header_responsive1.png) 8px 0 no-repeat;
+        strong {
+            font-size: 2.4rem;
+            margin-left: -5px;
+        }
+        span{
+            font-size: 2.4rem;
+            margin-left: -5px;
+        }
+    }
+
+}
+
+.banner-area{
+    position:relative;
+    margin : 0px auto;
+    background: url(../img/indian-wed-bg.jpg);
+    background-size: cover;
+    height : 700px;
+    width : 100%;
+}
+@media only screen and (max-width: 768px) {
+
+    .banner-area{
+        background: url(../img/bg_iphone5.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+.invitation{
+    background: url(../img/invitation.png) no-repeat center top;
+    height: 660px;
+    width: 750px;
+    left : 25%;
+
+    position: absolute;
+
+    .groom-name{
+        left : 90px;
+    }
+    .bride-name{
+        left : auto;
+        right : 105px;
+    }
+    .namespace{
+        font-size: 6.5rem;
+        color: #000;
+        text-align: center;
+        position: absolute;
+        top: 120px;
+        line-height: 1.2;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        text-shadow: 2px 2px 0px #FFF, 3px 3px 0px #707070;
+        overflow: hidden;
+    }
+
+    .place{
+        display: block;
+        font-size: 3rem;
+        font-weight : bold;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .invitation{
+        background: url(../img/invitation_responsive1.png) no-repeat center top;
+        left:0;
+        width:100%;
+        height:100%;
+        .groom-name{
+            left : 40px;
+        }
+        .bride-name{
+            right : 45px;
+        }
+        .namespace{
+            font-size: 5rem;
+            top:150px
+        }
+    }
+}
+
+.wedding-date{
+    position: absolute;
+    bottom: 120px;
+    text-align: center;
+    left: 35%;
+    font-size: 6.5rem;
+    color: #ffffff;
+    font-weight : normal;
+    font-family: Lobster Two;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    .wedding-date{
+        left:5%;
+    }
+}
+
+.rsvp-button-container{
+    position: absolute;
+    bottom : 0;
+    left:46%;
+}
+
+#rsvp-button img{
+    width : 50%;
+}
+@media only screen and (max-width: 768px) {
+    .rsvp-button-container{
+        left:35%;
+    }
+}
+
+.nav-area{
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #dfd6d1;
+    text-align: center;
+    padding: 15px 0;
+    background: white;
+
+    a{
+        font-family: sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #333;
+        margin: 0 10px;
+    }
+}
+/* ===================== Story section ==================== */\
+.story-section{
+    border-style: solid;
+}
+.section-container{
+    background-color: #f9f8f4;
+    padding-top: 80px;
+    float : right;
+    width : 100%;
+    padding-bottom: 20px;
+}
+
+.section-inner{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.heading{
+    text-align: center;
+
+    .section-title{
+        text-transform: uppercase;
+    }
+}
+
+
+.bottomLine{
+    width: 100%;
+    height: 20px;
+    border-top: 0px solid;
+    background-image: url(../img/title_line.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.divider-margin1 {
+    margin-bottom: 1px;
+    margin-top: 37px;
+    height : 1px;
+}
+
+.tk-left{
+    float: left;
+    margin-left: 200px;
+}
+.tk-right{
+    float: right;
+    margin-right: 200px;
+}
+
+.story-section-about{
+    width: 371px;
+    max-height: 484px;
+    background-image: url(../img/user-box.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    .about-image{
+        margin-top : 10px;
+    }
+
+    .about-title{
+        text-align: center;
+        padding: 0px 20px;
+        color: #fa6dab !important;
+        margin-bottom: 0px;
+        font-family: "Lobster Two";
+        font-size: 3.2rem;
+        margin-top: 28px;
+    }
+
+    .about-subtitle{
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #686763;
+        display: block;
+        padding: 0px 20px;
+        padding-top: 2px;
+    }
+
+    .about-content{
+        font-size: 1.2rem;
+        line-height: 20px;
+        color: #a7a6a2;
+        padding: 30px 39px 45px 39px;
+        text-align: left;
+    }
+}
+.story-about-icon {
+    width: 142px;
+    height: 45px;
+    font-size: 48px;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 20px;
+    margin-top: 247px;
+    color: #fa6dab !important;
+}
+@media only screen and (max-width: 768px) {
+    .tk-left{
+        margin-left: 0;
+    }
+    .tk-right{
+        margin-right: 0;
+    }
+    .story-section-about {
+        width: 100%;
+    }
+    .story-about-icon {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+/* ====== Ceremony Schedule ========== */
+.cursorPointer{
+    cursor : pointer;
+}
+.ceremony-item{
+
+    h3{
+        font-family: "Lobster Two";
+        padding-bottom: 10px;
+    }
+
+    img{
+        width:100%;
+    }
+
+    p{
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 1.8rem;
+        color: #404040;
+    }
+
+    h4{
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 2.4rem;
+        color: #414141;
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+}
+
+/* ============= Family ===============*/
+
+#section-family-groom,#section-family-bride{
+
+    .slideshow{
+        display: block;
+        height: auto;
+        padding: 0 20%;
+        margin-top: -50px;
+    }
+
+    .item{
+        height: 475px;
+        list-style: none outside none;
+        position: relative;
+
+    }
+
+    img{
+        bottom: 0;
+        left: 50px;
+        position: absolute;
+    }
+
+    .person{
+        background: url("../img/bg-groomsmen.png") no-repeat scroll 0 0 transparent;
+        height: 100%;
+        padding: 25px 50px 40px 70px;
+        position: absolute;
+        right: 0;
+        left: 200px;
+        top : 120px;
+        text-align: left;
+
+        .name{
+            color: #555555;
+            font-size: 30px;
+            font-style: italic;
+            margin: 0 0 5px;
+        }
+        .title{
+            color: #999999;
+            font-size: 18px;
+        }
+        .bio{
+            color: #8F8F8F;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 30px 0 0;
+        }
+
+    }
+
+    .owl-prev{
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        font-size:2rem;
+        &:before{
+            font-family: FontAwesome;
+            content: "\f104";
+        }
+    }
+    .owl-next{
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        font-size:2rem;
+        &:before{
+            font-family: FontAwesome;
+            content: "\f105";
+        }
+    }
+}
+.footer_logo{
+    display : none !important;
+}
