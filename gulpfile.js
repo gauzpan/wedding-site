@@ -226,5 +226,13 @@ gulp.task('watch', function(){
     gulp.watch("src/*.html", ['bs-reload']);
 });
 
+gulp.task('serveprod', function() {
+    connect.server({
+        root: ,
+        port: process.env.PORT || 5000, // localhost:5000
+        livereload: false
+    });
+});
+
 // deploys
 gulp.task('default',  ['scripts', 'less','browser-sync','watch']);
