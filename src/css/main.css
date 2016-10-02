@@ -450,7 +450,8 @@ iPad 3
 }
 @media only screen and (max-width: 768px) {
   .rsvp-button-container {
-    left: 35%;
+    left: 25%;
+    width: 100%;
   }
 }
 .nav-area {

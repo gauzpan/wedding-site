@@ -3,7 +3,7 @@ ee http://help.github.com/ignore-files/ for more about ignoring files.
 # compiled output
 /dist
 /tmp
-
+_site/
 # dependencies
 /node_modules
 /bower_components
