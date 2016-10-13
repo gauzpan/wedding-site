@@ -1,4 +1,6 @@
-
+.wrapper{
+    overflow-x: hidden;
+}
 #header{
     width: 649px;
     height: 121px;
@@ -23,26 +25,26 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
     html{
         font-size: 6px;
     }
     #header{
-        width:105%;
+        width:100%;
         line-height: 22px;
         padding-top: 20px;
-        background: url(../img/header_responsive1.png) 8px 0 no-repeat;
+        background: url(../img/header_responsive1.png) 0px 0 no-repeat;
         strong {
             font-size: 2.4rem;
-            margin-left: -5px;
+            margin-left: 0px;
         }
         span{
             font-size: 2.4rem;
-            margin-left: -5px;
+            margin-left: 0px;
         }
     }
-
 }
+
 
 .banner-area{
     position:relative;
@@ -52,13 +54,7 @@
     height : 700px;
     width : 100%;
 }
-@media only screen and (max-width: 768px) {
 
-    .banner-area{
-        background: url(../img/bg_iphone5.jpg) no-repeat;
-        background-size: cover;
-    }
-}
 .invitation{
     background: url(../img/invitation.png) no-repeat center top;
     height: 660px;
@@ -96,30 +92,13 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .invitation{
-        background: url(../img/invitation_responsive1.png) no-repeat center top;
-        left:0;
-        width:100%;
-        height:100%;
-        .groom-name{
-            left : 40px;
-        }
-        .bride-name{
-            right : 45px;
-        }
-        .namespace{
-            font-size: 5rem;
-            top:150px
-        }
-    }
-}
+
 
 .wedding-date{
     position: absolute;
     bottom: 120px;
+    width: 100%;
     text-align: center;
-    left: 35%;
     font-size: 6.5rem;
     color: #ffffff;
     font-weight : normal;
@@ -127,28 +106,21 @@
     text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
 }
 
-@media only screen and (max-width: 768px) {
-    .wedding-date{
-        left:5%;
-    }
-}
+
 
 .rsvp-button-container{
     position: absolute;
     bottom : 0;
-    left:46%;
+    width: 100%;
 
 }
 
 #rsvp-button img{
-    width : 50%;
+    width : 20%;
+    display: block;
+    margin: auto;
 }
-@media only screen and (max-width: 768px) {
-    .rsvp-button-container{
-        left:25%;
-        width:100%;
-    }
-}
+
 
 .nav-area{
     overflow: hidden;
@@ -223,6 +195,7 @@
     background-image: url(../img/user-box.png);
     background-position: center top;
     background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 
     .about-image{
@@ -390,6 +363,27 @@
         }
     }
 }
-.footer_logo{
-    display : none !important;
+
+.wedding-section{
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-dialog {
+        width: 630px;
+    }
+
+}
+.custom_footer {
+    color:white;
+    height: 50px;
+    background: #2B2A2D;
+    position: absolute;
+    bottom: 12px;
+    z-index: 10000;
+    width: 100%;
+
+    .fbLink{
+        font-size:4rem;
+    }
 }

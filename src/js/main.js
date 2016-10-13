@@ -19,4 +19,6 @@ $(function() {
         // itemsMobile : false
 
     });
+
+    $(document).find('.footer_logo').hide();
 });

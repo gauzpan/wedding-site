@@ -14,7 +14,7 @@ _site/
 .classpath
 *.launch
 .settings/
-
+aws.json
 # misc
 /.sass-cache
 /connect.lock

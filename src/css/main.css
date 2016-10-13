@@ -319,6 +319,9 @@ iPad 3
     page-break-after: avoid;
   }
 }
+.wrapper {
+  overflow-x: hidden;
+}
 #header {
   width: 649px;
   height: 121px;
@@ -341,23 +344,23 @@ iPad 3
   display: block;
   font-size: 2.5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   html {
     font-size: 6px;
   }
   #header {
-    width: 105%;
+    width: 100%;
     line-height: 22px;
     padding-top: 20px;
-    background: url(../img/header_responsive1.png) 8px 0 no-repeat;
+    background: url(../img/header_responsive1.png) 0px 0 no-repeat;
   }
   #header strong {
     font-size: 2.4rem;
-    margin-left: -5px;
+    margin-left: 0px;
   }
   #header span {
     font-size: 2.4rem;
-    margin-left: -5px;
+    margin-left: 0px;
   }
 }
 .banner-area {
@@ -367,12 +370,6 @@ iPad 3
   background-size: cover;
   height: 700px;
   width: 100%;
-}
-@media only screen and (max-width: 768px) {
-  .banner-area {
-    background: url(../img/bg_iphone5.jpg) no-repeat;
-    background-size: cover;
-  }
 }
 .invitation {
   background: url(../img/invitation.png) no-repeat center top;
@@ -406,53 +403,26 @@ iPad 3
   font-size: 3rem;
   font-weight: bold;
 }
-@media only screen and (max-width: 768px) {
-  .invitation {
-    background: url(../img/invitation_responsive1.png) no-repeat center top;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .invitation .groom-name {
-    left: 40px;
-  }
-  .invitation .bride-name {
-    right: 45px;
-  }
-  .invitation .namespace {
-    font-size: 5rem;
-    top: 150px;
-  }
-}
 .wedding-date {
   position: absolute;
   bottom: 120px;
+  width: 100%;
   text-align: center;
-  left: 35%;
   font-size: 6.5rem;
   color: #ffffff;
   font-weight: normal;
   font-family: Lobster Two;
   text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
 }
-@media only screen and (max-width: 768px) {
-  .wedding-date {
-    left: 5%;
-  }
-}
 .rsvp-button-container {
   position: absolute;
   bottom: 0;
-  left: 46%;
+  width: 100%;
 }
 #rsvp-button img {
-  width: 50%;
-}
-@media only screen and (max-width: 768px) {
-  .rsvp-button-container {
-    left: 25%;
-    width: 100%;
-  }
+  width: 20%;
+  display: block;
+  margin: auto;
 }
 .nav-area {
   overflow: hidden;
@@ -518,6 +488,7 @@ iPad 3
   background-image: url(../img/user-box.png);
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
 }
 .story-section-about .about-image {
@@ -672,6 +643,155 @@ iPad 3
   font-family: FontAwesome;
   content: "\f105";
 }
-.footer_logo {
-  display: none !important;
+.wedding-section {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 630px;
+  }
+}
+.custom_footer {
+  color: white;
+  height: 50px;
+  background: #2B2A2D;
+  position: absolute;
+  bottom: 12px;
+  z-index: 10000;
+  width: 100%;
+}
+.custom_footer .fbLink {
+  font-size: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .banner-area {
+    background: url(../img/bg_iphone5.jpg) no-repeat;
+    background-size: cover;
+  }
+  .invitation {
+    background: url(../img/invitation_responsive1.png) no-repeat center top;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .invitation .groom-name {
+    left: 35px;
+  }
+  .invitation .bride-name {
+    right: 45px;
+  }
+  .invitation .namespace {
+    font-size: 5rem;
+    top: 150px;
+  }
+  .rsvp-button-container {
+    width: 100%;
+  }
+  #rsvp-button img {
+    width: 60%;
+  }
+  .about-content {
+    font-size: 1.4rem;
+  }
+}
+/* iPhone 5 ----------- */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  /* Styles */
+  html {
+    font-size: 6px;
+  }
+  #header {
+    width: 100%;
+    line-height: 22px;
+    padding-top: 20px;
+    background: url(../img/header_responsive1.png) 50% 0 no-repeat;
+  }
+  .banner-area {
+    background: url(../img/bg_iphone5.jpg) no-repeat;
+    background-size: cover;
+  }
+  .invitation .groom-name {
+    left: 13%;
+  }
+  .invitation .bride-name {
+    right: 15%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  /* Styles */
+  html {
+    font-size: 6px;
+  }
+  #header {
+    width: 100%;
+    line-height: 22px;
+    padding-top: 20px;
+    background: url(../img/header_responsive1.png) 50% 0 no-repeat;
+  }
+  .invitation .groom-name {
+    left: 17%;
+  }
+  .invitation .bride-name {
+    right: 22%;
+  }
+}
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+  /* Styles */
+  html {
+    font-size: 6px;
+  }
+  #header {
+    width: 100%;
+    line-height: 22px;
+    padding-top: 20px;
+    background: url(../img/header_responsive1.png) 50% 0 no-repeat;
+  }
+  .invitation .groom-name {
+    left: 22%;
+  }
+  .invitation .bride-name {
+    right: 23%;
+  }
+  .invitation .namespace {
+    font-size: 5rem;
+    top: 150px;
+  }
+  #rsvp-button img {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
+  html {
+    font-size: 6px;
+  }
+  .banner-area {
+    background: url(../img/bg_768px.jpg) no-repeat;
+    background-size: cover;
+  }
+  .invitation .groom-name {
+    left: 32.5%;
+  }
+  .invitation .bride-name {
+    right: 32.5%;
+  }
+  #rsvp-button img {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .invitation {
+    left: 15%;
+  }
+  .invitation .groom-name {
+    left: 12%;
+  }
+  .invitation .bride-name {
+    right: 12%;
+  }
+  .tk-left {
+    margin-left: 0px !important;
+  }
+  .tk-right {
+    margin-right: 0px !important;
+  }
 }

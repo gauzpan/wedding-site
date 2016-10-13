@@ -186,7 +186,7 @@ gulp.task('browser-sync', function () {
 
 gulp.task('build', function (done) {
     runSequence(
-        ['clean', 'lint:js'],
+        ['clean'],
         'copy',
         done);
 });
@@ -226,12 +226,11 @@ gulp.task('watch', function(){
     gulp.watch("src/*.html", ['bs-reload']);
 });
 
-gulp.task('serveprod', function() {
-    connect.server({
-        root: ,
-        port: process.env.PORT || 5000, // localhost:5000
-        livereload: false
-    });
+
+
+var s3 = require("gulp-s3");
+gulp.task('deploy', ['build'], function () {
+    return gulp.src('./dist/**/*').pipe(s3(require('./aws.json')));
 });
 
 // deploys
